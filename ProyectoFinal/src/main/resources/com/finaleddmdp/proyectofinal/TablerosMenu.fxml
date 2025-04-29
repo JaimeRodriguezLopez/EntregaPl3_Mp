@@ -16,6 +16,8 @@
          </font>
       </Label>
       <ChoiceBox prefWidth="150.0" />
+      <Button mnemonicParsing="false" text="Editar tablero" />
+      <Label text="Abriría el tablero seleccionado pero solo para añadir atributos especiales (Ir por ruta de Nueva Partida)" />
       <Button fx:id="volverMenuPrincipalButton" mnemonicParsing="false" onAction="#onvolverMenuPrincipalButtonClick" text="Volver Menu Principal" />
    </children>
 </VBox>

@@ -14,6 +14,7 @@
       <Label text="Lista de partidas empezadas" />
       <ChoiceBox prefWidth="150.0" />
       <Button mnemonicParsing="false" text="CargarPartida" />
+      <Label text="No funciona para ver como seria la partida ir por Nueva partida" />
       <Button fx:id="volverMenuPrincipalButton" mnemonicParsing="false" onAction="#onVolverMenuPrincipal" text="Volver al Menu principal" />
    </children>
 </VBox>

@@ -11,6 +11,7 @@ import java.io.IOException;
 
 public class PrimerMenuCreacionDeTablerosController {
     public Button cancelarButton;
+    public Button continuarButton;
 
     @FXML
     protected void onCancelarButtonClick() {
@@ -21,6 +22,18 @@ public class PrimerMenuCreacionDeTablerosController {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    @FXML
+    protected void onContinuarButtonClick() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("SegundoMenuCreacionTableros.fxml"));
+            Parent root = loader.load();
+            Stage stage = (Stage) continuarButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+        }catch (IOException e){
             e.printStackTrace();
         }
     }

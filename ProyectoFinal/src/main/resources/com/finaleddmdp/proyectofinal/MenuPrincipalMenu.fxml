@@ -19,4 +19,8 @@
    <Button fx:id="verLogsButton" mnemonicParsing="false" onAction="#onVerLogsButtonClick" text="Ver Logs" />
 
    <Button fx:id="exitGameButton" mnemonicParsing="false" onAction="#onExitButtonClick" text="Salir del Juego" />
+   <Label prefHeight="18.0" prefWidth="220.0" text="Esto es un diseño temprano de pantallas" textAlignment="CENTER" />
+   <Label text="ninguna funcion que requiera codigo funcionara" />
+   <Label text="Esto es simplemente una visualizacion de como " />
+   <Label text="podrian verse las funciones" />
 </VBox>

@@ -15,6 +15,7 @@
       <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
          <children>
             <Label alignment="TOP_CENTER" text="Lista de Tableros" />
+            <ChoiceBox prefWidth="150.0" />
          </children></VBox>
       <Label text="Si se empieza una partida sin seleccionar tablero," />
       <Label text="se utilizara uno sin modificadores especiales base nxn." />
