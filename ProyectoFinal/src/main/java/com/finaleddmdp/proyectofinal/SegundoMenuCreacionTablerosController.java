@@ -48,7 +48,7 @@ public class SegundoMenuCreacionTablerosController {
     @FXML
     protected void onTerminarButtonClick() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipalMenu.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("ConfigPartida.fxml"));
             Parent root = loader.load();
             Stage stage = (Stage) terminarBoton.getScene().getWindow(); // reuse current stage
             stage.setScene(new Scene(root));

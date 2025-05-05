@@ -29,6 +29,6 @@
          </children>
       </GridPane>
       <Label layoutY="46.0" prefHeight="18.0" prefWidth="686.0" text="La idea es que hagas click en un botón y aparezca un pop out para seleccionar los atributos de la casilla en cada una de ellas" />
-      <Button fx:id="terminarBoton" layoutX="470.0" layoutY="321.0" mnemonicParsing="false" onAction="#onTerminarButtonClick" text="Terminar" />
+      <Button fx:id="terminarBoton" layoutX="470.0" layoutY="321.0" mnemonicParsing="false" onAction="#onTerminarButtonClick" text="EmpezarPartida" />
    </children>
 </AnchorPane>

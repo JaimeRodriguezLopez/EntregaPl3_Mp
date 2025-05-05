@@ -10,6 +10,7 @@ module com.finaleddmdp.proyectofinal {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires jdk.compiler;
 
     opens com.finaleddmdp.proyectofinal to javafx.fxml;
     exports com.finaleddmdp.proyectofinal;
