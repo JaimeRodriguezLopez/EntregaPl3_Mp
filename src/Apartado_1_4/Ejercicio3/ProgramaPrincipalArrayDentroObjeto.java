@@ -1,0 +1,43 @@
+package Apartado_1_4.Ejercicio3;
+
+import com.google.gson.Gson;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class ProgramaPrincipalArrayDentroObjeto {
+    static <T> void guardarMiclase(MiClase ob, String ruta){
+        Gson gson = new Gson();
+        try(FileWriter fw = new FileWriter(ruta)){
+            gson.toJson(ob,fw);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+        }
+    }
+    static MiClase leerMiClase(String ruta){
+        Gson gson = new Gson();
+        try(FileReader fr = new FileReader(ruta)){
+            return gson.fromJson(fr,MiClase.class);
+        }
+        catch (IOException e){
+            e.printStackTrace();
+            return null;
+        }
+    }
+    public static void main(String[] args) {
+        if(((!args[0].equals("init"))&&(!args[0].equals("show")))|| args.length != 2){
+            System.out.println("Error: El primer parametro ha de corresponder a: init/show y el segundo a la ruta, no pueden ser vacíos");
+        }
+        else if(args[0].equals("init")){
+            MiClase ob = new MiClase(4);
+            guardarMiclase(ob,args[1]);
+            System.out.println("Se ha guardado el objeto: " + ob + ". En la ruta: " + args[1]);
+        }
+        else{
+            System.out.println("Se ha leido: " + leerMiClase(args[1]));
+        }
+    }
+}
