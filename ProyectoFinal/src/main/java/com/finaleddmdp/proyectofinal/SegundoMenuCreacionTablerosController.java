@@ -50,7 +50,7 @@ public class SegundoMenuCreacionTablerosController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("ConfigPartida.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) terminarBoton.getScene().getWindow(); // reuse current stage
+            Stage stage = (Stage) terminarBoton.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {

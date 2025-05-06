@@ -28,7 +28,7 @@ public class MenuPrincipalController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("NuevaPartidaMenu.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) nuevaPartidaButton.getScene().getWindow(); // reuse current stage
+            Stage stage = (Stage) nuevaPartidaButton.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
@@ -40,7 +40,7 @@ public class MenuPrincipalController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("CargarPartidaMenu.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) nuevaPartidaButton.getScene().getWindow(); // reuse current stage
+            Stage stage = (Stage) nuevaPartidaButton.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {

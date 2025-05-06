@@ -16,7 +16,7 @@ public class CargarPartidaMenuController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipalMenu.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) volverMenuPrincipalButton.getScene().getWindow(); // reuse current stage
+            Stage stage = (Stage) volverMenuPrincipalButton.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {

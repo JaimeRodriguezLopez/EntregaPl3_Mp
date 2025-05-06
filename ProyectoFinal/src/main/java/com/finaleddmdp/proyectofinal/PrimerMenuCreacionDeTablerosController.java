@@ -18,7 +18,7 @@ public class PrimerMenuCreacionDeTablerosController {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("MenuPrincipalMenu.fxml"));
             Parent root = loader.load();
-            Stage stage = (Stage) cancelarButton.getScene().getWindow(); // reuse current stage
+            Stage stage = (Stage) cancelarButton.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
