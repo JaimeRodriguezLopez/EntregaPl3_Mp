@@ -19,6 +19,7 @@ public class ejercicioSoloLeer {
             this.correo = correo;
         }
 // Getters y setters no incluidos por brevedad
+
     }
     public static void main(String[] args) {
         Gson gson = new Gson();
